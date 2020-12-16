@@ -8,7 +8,8 @@ public class Driver {
 
   public static Connection getConnection() throws SQLException {
 
-    String dbURL = "jdbc:sqlserver://localhost;user=sa;password=reallyStrongPwd#123"; //connection sträng
+    String dbURL = "jdbc:sqlserver://data source=localhost;" +
+            "       Initial Catalog=school;Integrated Security=SSPI;"; //connection sträng
 
     Connection conn = DriverManager.getConnection(dbURL); //anropar klassen DriverManager
 
